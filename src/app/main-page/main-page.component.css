@@ -1,0 +1,21 @@
+
+.container{
+    margin: 2vw;
+    padding:2vh;
+    background-color: rgba(105, 85, 161, 0.863) ;
+    height:50vh;
+    width: 25vw;
+    box-shadow: 0 0px 10px 3px black;
+    position: absolute;
+    border-radius: 12px;
+    
+    
+}
+
+.button{
+    border-radius: 12px;
+    height:40px;
+    width: 80px;
+    
+    
+}

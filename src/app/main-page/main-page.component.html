@@ -1,0 +1,38 @@
+<h1 class="header">Welcome to Dog Finder!</h1>
+
+<div class="container" style="top:25%; font-weight:bold;">Looking For Love Near You?
+    <br>
+    <br>
+    <div style="font-weight: normal;"> Find available pups in your area by typing in your zip code. Have a specific breed in mind? Let us know that as well!</div>
+    <br>
+    <form class="dogSearch">
+        <input type="text" placeholder="zip code" name="zip" required [(ngModel)]="zipcode">
+        <input type="text" placeholder="breed" name="breed" [(ngModel)]="breed">
+        <br>
+        <button type = "button" class="button" (click)="goNearYou()">Dogs Near You</button>
+    </form> 
+</div>
+
+<div class="container" style="top:25%; right:33.33%; font-weight:bold;">Have a Specific Shelter In Mind?
+    <br>
+    <br>
+    <div style="font-weight: normal;"> Want to support a particular animal shelter? See their available pups by searching the shelter's name in the box below</div>
+    <br>
+    <form class="shelterSearch">
+        <input type="text" placeholder="Shelter Name" name="sheltername" [(ngModel)]="shelterName">
+        <br>
+        <button class="button" (click)="goShelter()">Shelter Search</button>
+    </form>     
+</div>
+    
+<div class="container" style="top:25%; left:66.66%; font-weight:bold;">Want To Talk Dogs?
+    <br>
+    <br>
+    <div style="font-weight: normal;"> Click here to chat with other dog lovers and pup-parents. Make posts, give recommendations, read testimonials, and spread your love for pups with our DogTalk forum! </div>    
+    <br>
+    <button class="button" (click)="goForum()">DogTalk Forum</button>
+
+
+</div>
+
+
