@@ -19,9 +19,9 @@
     <div style="font-weight: normal;"> Want to support a particular animal shelter? See their available pups by searching the shelter's name in the box below</div>
     <br>
     <form class="shelterSearch">
-        <input type="text" placeholder="Shelter Name" name="sheltername" [(ngModel)]="shelterName">
+        <input type="text" placeholder="Shelter Name" name="sheltername" required [(ngModel)]="shelterName">
         <br>
-        <button class="button" (click)="goShelter()">Shelter Search</button>
+        <button type = "button" class="button" (click)="goShelter()">Shelter Search</button>
     </form>     
 </div>
     

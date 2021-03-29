@@ -3,19 +3,18 @@ import {Router} from "@angular/router";
 import { SearchDataService } from '../search-data.service';
 
 @Component({
-  selector: 'app-near-you',
-  templateUrl: './near-you.component.html',
-  styleUrls: ['./near-you.component.css']
+  selector: 'app-shelter',
+  templateUrl: './shelter.component.html',
+  styleUrls: ['./shelter.component.css']
 })
-export class NearYouComponent implements OnInit {
-  
-  constructor(private router : Router,
-              private searchData: SearchDataService) {}
+export class ShelterComponent implements OnInit {
 
-  
-  
-  zipcode = this.searchData.getZip();
-  breed = this.searchData.getBreed();
+  constructor(private router : Router,
+              private searchData: SearchDataService) {} 
+
+  shelter = this.searchData.getShelter();
+
+
 
   dogs  = [
     {"name":"yuki", "breed":"aussie","shelter":"Katie's Apartment", "contact":"9852599517", "age":"8mo", "timeOn":"3mo"},
@@ -25,24 +24,8 @@ export class NearYouComponent implements OnInit {
     {"name":"angel", "breed":"toy poodle","shelter":"Nona's house", "contact":"...", "age":"17yr", "timeOn":"3days"}
   ]
 
-
   
-
- 
-  
-  ngOnInit(): void { 
-    
-
-    console.log("this is in near you")
-    
-    console.log("zipcode:" + this.zipcode) 
-    console.log("breed:" + this.breed)
-    
-    
-    
-    
-    //this.searchData.logData()
-    
+  ngOnInit(): void {
   }
 
 }

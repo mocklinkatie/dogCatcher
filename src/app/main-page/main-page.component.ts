@@ -23,15 +23,21 @@ export class MainPageComponent implements OnInit {
   }
   goNearYou(){
     this.searchData.setZip(this.zipcode)
-    this.searchData.breed = this.breed
-    console.log(this.searchData.zipcode)
-    this.router.navigate(['/NearYou'])
+    this.searchData.setBreed(this.breed)
+    if(this.zipcode)
+    {
+      this.router.navigate(['/NearYou']);
+    }
+    
 
   }
   goShelter(){
-    return
-   //console.log('shelter is: ' + this.shelterName)
-    //this.router.navigate(['/ShelterSearch'])
+    this.searchData.setShelter(this.shelterName)
+    if(this.shelterName){
+      this.router.navigate(['/Shelter']);
+    }
+    
+ 
 
   }
   goForum(){

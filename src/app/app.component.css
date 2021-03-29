@@ -1,5 +1,7 @@
 .card{
-    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 92vh;
     width: 95vw;
     background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
@@ -28,11 +30,12 @@
 }
 
 .title{
-    position: absolute;
+    position:absolute;
     font-size: 200%;
     left:50%;
-    top:5%;
+    
     transform: translate(-50%,-50%);
+    margin:2.5%;
 }
 .home{
     width:5%;
